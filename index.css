@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button {
+        @apply rounded bg-red-500 px-5 py-1 hover:bg-red-700 drop-shadow text-white
+    }
+}
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Lato', sans-serif;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #302150 !important;
+    background-color: unset;
+    border-radius: 50%;
+    padding: 30px;
+  }
+
+  .swiper-pagination-bullet{
+    height: 20px !important;
+    width: 20px !important;
+    background-color: unset !important;
+    border: #302150 solid 3px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #302150 !important;
+  }
+  
+  .bg-custom-navy {
+    background-color: #3D4170;
+  }
+
+  .bg-custom-indigo {
+    background-color: #302150;
+  }
+
+  .oveflow-custom-inspect {
+    overflow: hidden;
+  }
+
+  .testimonial {
+    position: absolute;
+    bottom: -59px;
+    left: 70%;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 40px solid transparent;
+    border-top: 60px solid white;
+  }
